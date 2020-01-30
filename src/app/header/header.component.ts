@@ -13,8 +13,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  printTitle(num: number): string {
-    return this.title + num;
+  printTitle(): string {
+    return this.title;
   }
 
   handleHeaderClick() {

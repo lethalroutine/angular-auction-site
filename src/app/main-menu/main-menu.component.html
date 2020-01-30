@@ -4,7 +4,7 @@
   </button>
   <div class="collapse navbar-collapse" [ngClass]="{show: showMenu}" id="navbarNav">
     <ul class="navbar-nav">
-      <li *ngFor="let item of menuItems" class="nav-item">
+      <li *ngFor="let item of menuItems" class="nav-item" routerLinkActive="active">
         <a class="nav-link" [routerLink]="item.link">{{item.name}}</a>
       </li>
       <li>
