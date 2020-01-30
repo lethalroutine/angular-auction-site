@@ -6,8 +6,9 @@
     </div>
   </header>
   <div class="row">
-    <div class="col-12">
-      tu będzie aukcja
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3"
+    *ngFor="let auction of auctionItems">
+      <ap-auction-card [auction]="auction"></ap-auction-card>
     </div>
   </div>
 </section>
