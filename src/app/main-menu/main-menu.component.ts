@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuItem } from './menu-item';
 
 @Component({
   selector: 'ap-main-menu',
@@ -7,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainMenuComponent implements OnInit {
   showMenu = false;
+  menuItems: MenuItem[] = [
+    {name: 'Aukcje', link: 'auctions'},
+    {name: 'Promocje', link: 'promotions'},
+    {name: 'Podpowiadamy', link: 'advices'}
+  ];
 
   constructor() { }
 
