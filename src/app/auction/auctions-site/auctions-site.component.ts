@@ -15,7 +15,7 @@ export class AuctionsSiteComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     console.log('hello auction sites component');
-    this.auctionItems = this.auctionService.getAuctionItems();
+    this.auctionService.getAuctionItems().subscribe( auctions => this.auctionItems = auctions);
   }
 
   ngOnDestroy(): void {
