@@ -10,6 +10,7 @@ import { AuctionCardComponent } from './auction-card/auction-card.component';
 import { CartSiteComponent } from './cart-site/cart-site.component';
 import { AddAuctionSiteComponent } from './add-auction-site/add-auction-site.component';
 import { CartItemsCounterComponent } from './cart-items-counter/cart-items-counter.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { CartItemsCounterComponent } from './cart-items-counter/cart-items-count
     AuctionRoutingModule,
     HttpClientModule,
     FormsModule,
+    SharedModule,
   ],
   exports: [AuctionsSiteComponent]
 })
