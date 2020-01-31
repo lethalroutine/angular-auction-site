@@ -13,6 +13,27 @@
             "title": "samsung s5",
             "description": "samsung",
             "price": 250
+        },
+        {
+            "id": 3,
+            "imageUrl": "https://picsum.photos/id/4/200/200",
+            "title": "xiamoi redmi",
+            "description": "xiaomi",
+            "price": 250
+        },
+        {
+            "id": 4,
+            "imageUrl": "https://picsum.photos/id/5/200/200",
+            "title": "motorolla",
+            "description": "motorolla",
+            "price": 250
+        },
+        {
+            "id": 5,
+            "imageUrl": "https://picsum.photos/id/6/200/200",
+            "title": "nokia lumia",
+            "description": "nokia",
+            "price": 250
         }
     ]
 }

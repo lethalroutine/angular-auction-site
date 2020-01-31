@@ -12,4 +12,12 @@
       </li>
     </ul>
   </div>
+  <div>
+    <a class="btn btn-primary" [routerLink]="addAuctionItem.link">
+      <i class="fa fa-plus"></i> {{ addAuctionItem.name }}
+    </a>
+    <a class="btn btn-secondary ml-2" [routerLink]="cartItem.link">
+      <i class="fa fa-shopping-basket"></i> {{ cartItem.name }}
+    </a>
+  </div>
 </nav>

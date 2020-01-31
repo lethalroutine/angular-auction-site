@@ -11,8 +11,11 @@ export class MainMenuComponent implements OnInit {
   menuItems: MenuItem[] = [
     {name: 'Aukcje', link: 'auctions'},
     {name: 'Promocje', link: 'promotions'},
-    {name: 'Podpowiadamy', link: 'advices'}
+    {name: 'Podpowiadamy', link: 'advices'},
   ];
+
+  addAuctionItem: MenuItem = {name: 'Dodaj', link: 'add-auction'};
+  cartItem: MenuItem = {name: 'Koszyk', link: 'cart'};
 
   constructor() { }
 
