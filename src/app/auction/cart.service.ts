@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AuctionItem } from './auctions-site/auction-item';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { map } from 'rxjs/operators'
 
 @Injectable({
   providedIn: 'root'
@@ -19,5 +20,9 @@ export class CartService {
 
   getItems(): BehaviorSubject<AuctionItem[]> {
     return this.itemsSubject;
+  }
+
+  countItems(): Observable<number> {
+    return this.itemsSubject.pipe(map(auctions => auctions.length));
   }
 }

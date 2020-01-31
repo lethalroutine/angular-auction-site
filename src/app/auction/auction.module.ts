@@ -8,10 +8,11 @@ import { PromotionsSiteComponent } from './promotions-site/promotions-site.compo
 import { AuctionCardComponent } from './auction-card/auction-card.component';
 import { CartSiteComponent } from './cart-site/cart-site.component';
 import { AddAuctionSiteComponent } from './add-auction-site/add-auction-site.component';
+import { CartItemsCounterComponent } from './cart-items-counter/cart-items-counter.component';
 
 
 @NgModule({
-  declarations: [AuctionsSiteComponent, PromotionsSiteComponent, AuctionCardComponent, CartSiteComponent, AddAuctionSiteComponent],
+  declarations: [AuctionsSiteComponent, PromotionsSiteComponent, AuctionCardComponent, CartSiteComponent, AddAuctionSiteComponent, CartItemsCounterComponent],
   imports: [
     CommonModule,
     AuctionRoutingModule,
