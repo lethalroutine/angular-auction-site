@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { AuctionItem } from './../auctions-site/auction-item';
 import { CartService } from './../cart.service';
 
@@ -23,15 +23,13 @@ import { CartService } from './../cart.service';
   `,
   styles: []
 })
-export class AuctionCardComponent implements OnInit {
+export class AuctionCardComponent {
   @Input() auction: AuctionItem;
+  @Output() whenAddCartClick = new EventEmitter<AuctionItem>();
 
-  constructor(private cartService: CartService) { }
 
-  ngOnInit() {
-  }
   addToCart() {
-    this.cartService.addItem(this.auction);
+    this.whenAddCartClick.emit(this.auction);
   }
 
 }

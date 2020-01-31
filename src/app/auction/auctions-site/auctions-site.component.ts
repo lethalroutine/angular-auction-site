@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { AuctionItem } from './auction-item';
 import { AuctionsService } from './../auctions.service';
 import { Subscription } from 'rxjs';
+import { CartService } from './../cart.service';
 
 @Component({
   selector: 'ap-auctions-site',
@@ -13,7 +14,7 @@ export class AuctionsSiteComponent implements OnInit, OnDestroy {
   private subscription: Subscription;
   errorMessage = '';
 
-  constructor(private auctionService: AuctionsService) {
+  constructor(private auctionService: AuctionsService, private cartService: CartService) {
   }
 
   ngOnInit() {
@@ -29,5 +30,9 @@ export class AuctionsSiteComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     console.log('method not implemented');
     this.subscription.unsubscribe();
+  }
+
+  handleAddToCart(auction: AuctionItem) {
+    this.cartService.addItem(auction);
   }
 }
