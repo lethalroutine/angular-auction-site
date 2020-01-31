@@ -6,7 +6,7 @@ import { pipe } from 'rxjs';
   selector: 'ap-cart-items-counter',
   template: `
     <p>
-      number of items in cart {{ numberOfItemsInCart }}
+      Masz już {{ numberOfItemsInCart }} elementów w koszyku!
     </p>
   `,
   styles: []
