@@ -11,15 +11,19 @@ import { Subscription } from 'rxjs';
 export class AuctionsSiteComponent implements OnInit, OnDestroy {
   auctionItems: AuctionItem[] = [];
   private subscription: Subscription;
+  errorMessage = '';
 
   constructor(private auctionService: AuctionsService) {
   }
 
   ngOnInit() {
-    this.subscription = this.auctionService.getAuctionItems().subscribe( auctions => {
+    this.subscription = this.auctionService.getAuctionItems().subscribe( (auctions: AuctionItem[]) => {
       this.auctionItems = auctions;
-    });
-    console.log('hello auction sites component');
+    },
+    (error: Error) => {
+      this.errorMessage = error.message;
+    }
+    );
   }
 
   ngOnDestroy(): void {

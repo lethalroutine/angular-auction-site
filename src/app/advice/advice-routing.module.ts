@@ -5,7 +5,7 @@ import { AdvicesSiteComponent } from './advices-site/advices-site.component';
 
 
 const routes: Routes = [
-  {path: 'advices', component: AdvicesSiteComponent}
+  {path: '', component: AdvicesSiteComponent}
 ];
 
 @NgModule({
