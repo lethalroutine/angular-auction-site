@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { AuctionItem } from './../auctions-site/auction-item';
+import { CartService } from './../cart.service';
 
 @Component({
   selector: 'ap-auction-card',
@@ -13,7 +14,7 @@ import { AuctionItem } from './../auctions-site/auction-item';
     <p class="card-text">{{ auction.description }}</p>
     <div class="d-flex justify-content-between">
       <strong>{{ auction.price }} zł</strong>
-      <button class="btn btn-primary">
+      <button class="btn btn-primary" (click)="addToCart()">
         <i class="fa fa-cart-plus"></i>
       </button>
     </div>
@@ -25,9 +26,12 @@ import { AuctionItem } from './../auctions-site/auction-item';
 export class AuctionCardComponent implements OnInit {
   @Input() auction: AuctionItem;
 
-  constructor() { }
+  constructor(private cartService: CartService) { }
 
   ngOnInit() {
+  }
+  addToCart() {
+    this.cartService.addItem(this.auction);
   }
 
 }
