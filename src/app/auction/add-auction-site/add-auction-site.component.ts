@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'ap-add-auction-site',
@@ -10,6 +11,10 @@ export class AddAuctionSiteComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  handleFormSubmit(form: NgForm) {
+    console.log(form);
   }
 
 }
