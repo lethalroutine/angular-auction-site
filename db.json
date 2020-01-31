@@ -1,39 +1,79 @@
 {
-    "auctions": [
-        {
-            "id": 1,
-            "imageUrl": "https://picsum.photos/id/3/200/200",
-            "title": "iphone 3g",
-            "description": "ajfon",
-            "price": 100
-        },
-        {
-            "id": 2,
-            "imageUrl": "https://picsum.photos/id/2/200/200",
-            "title": "samsung s5",
-            "description": "samsung",
-            "price": 250
-        },
-        {
-            "id": 3,
-            "imageUrl": "https://picsum.photos/id/4/200/200",
-            "title": "xiamoi redmi",
-            "description": "xiaomi",
-            "price": 250
-        },
-        {
-            "id": 4,
-            "imageUrl": "https://picsum.photos/id/5/200/200",
-            "title": "motorolla",
-            "description": "motorolla",
-            "price": 250
-        },
-        {
-            "id": 5,
-            "imageUrl": "https://picsum.photos/id/6/200/200",
-            "title": "nokia lumia",
-            "description": "nokia",
-            "price": 250
-        }
-    ]
+  "auctions": [
+    {
+      "id": 1,
+      "imageUrl": "https://picsum.photos/id/3/200/200",
+      "title": "iphone 3g",
+      "description": "ajfon",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://picsum.photos/id/2/200/200",
+      "title": "samsung s5",
+      "description": "samsung",
+      "price": 250
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://picsum.photos/id/4/200/200",
+      "title": "xiamoi redmi",
+      "description": "xiaomi",
+      "price": 250
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://picsum.photos/id/5/200/200",
+      "title": "motorolla",
+      "description": "motorolla",
+      "price": 250
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://picsum.photos/id/6/200/200",
+      "title": "nokia lumia",
+      "description": "nokia",
+      "price": 250
+    },
+    {
+      "title": "smartfon",
+      "price": 12,
+      "imgUrl": 100,
+      "description": "asd",
+      "imageUrl": "https://picsum.photos/id/${this.imgId}/200/200",
+      "id": 6
+    },
+    {
+      "title": "smartfon",
+      "price": 123,
+      "imgUrl": 123,
+      "description": "asdf",
+      "imageUrl": "https://picsum.photos/id/${this.imgId}/200/200",
+      "id": 7
+    },
+    {
+      "title": "aa",
+      "price": 123,
+      "imgUrl": 1001,
+      "description": "df",
+      "imageUrl": "https://picsum.photos/id/${{this.imgId}}/200/200",
+      "id": 8
+    },
+    {
+      "title": "dupa",
+      "price": 312,
+      "imgUrl": 10011,
+      "description": "ddd",
+      "imageUrl": "https://picsum.photos/id/10011/200/200",
+      "id": 9
+    },
+    {
+      "title": "uzytkownik",
+      "price": 111,
+      "imgUrl": 100,
+      "description": "ff",
+      "imageUrl": "https://picsum.photos/id/100/200/200",
+      "id": 10
+    }
+  ]
 }
